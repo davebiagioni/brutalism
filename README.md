@@ -24,21 +24,3 @@ Brutalism gives you the function.
 The skill is opt-in. It won't auto-apply to ordinary code tasks. Invoke a slash command, or say "be brutal" / "brutalism mode".
 
 That's it.
-
----
-
-```
-                .---.
-                |   |
-                |   |
-            .---+   +--.
-         __/            \__
-        /                  \___
-   ____/                       \
-  |::::::::::::::::::::::::::::|
-  |::::::::::::::::::::::::::::|
-  |::::::::::::::::::::::::::::|
-  +----------------------------+
-```
-
-<sub>After the Engineering Center, University of Colorado Boulder. The author wrote his thesis inside it.</sub>
