@@ -27,4 +27,4 @@ That's it.
 
 ---
 
-<sub><img src="assets/engineering-center.jpg" width="320" alt="Engineering Center, University of Colorado Boulder — a brutalist concrete building"><br>Engineering Center, University of Colorado Boulder. Photo by <a href="https://www.flickr.com/photos/jjes84/55029487863/">Jesse James</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Engineering_Center_CU_Boulder_(55029487863).jpg">Wikimedia Commons</a>. Resized.</sub>
+<sub><img src="assets/engineering-center.jpg" width="320" alt="Engineering Center, University of Colorado Boulder — a brutalist concrete building"><br>Engineering Center, University of Colorado Boulder. The author wrote his thesis inside it. Photo by <a href="https://www.flickr.com/photos/jjes84/55029487863/">Jesse James</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Engineering_Center_CU_Boulder_(55029487863).jpg">Wikimedia Commons</a>. Resized.</sub>
