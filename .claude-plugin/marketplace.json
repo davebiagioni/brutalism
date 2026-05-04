@@ -1,0 +1,12 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "brutalism",
+  "description": "Single-plugin marketplace for brutalism.",
+  "owner": {"name": "Dave Biagioni"},
+  "plugins": [
+    {
+      "name": "brutalism",
+      "source": "."
+    }
+  ]
+}
