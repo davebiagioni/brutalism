@@ -12,7 +12,7 @@ Brutalism gives you the function.
 
 ## Numbers
 
-Two experiments. Same model, fresh sessions per run, N=5 each.
+Three experiments. Same model, fresh sessions per run, N=5 each.
 
 **LRU cache, fixed test suite.** Both produced the same 20-line implementation.
 
@@ -32,7 +32,17 @@ Two experiments. Same model, fresh sessions per run, N=5 each.
 | impl lines          |        25 |         134 |
 | held-out correctness| 20.4/22   | 21.0/22     |
 
-Zero subagent invocations from either plugin in either experiment. Reproduction and full writeups: [`experiments/`](experiments/).
+**Four independent micro-utilities.** Brutalism dispatched a comrade per module — exactly 4, every rep. Superpowers, with the same capability available, dispatched 1.6 times on average with stdev 2.2.
+
+| metric                | brutalism | superpowers |
+|-----------------------|----------:|------------:|
+| wall time             |       49s |        135s |
+| output tokens         |      15k  |         27k |
+| impl lines            |        21 |          40 |
+| held-out correctness  |    26/26  |      26/26  |
+| `Agent` dispatches    | **4.0 ± 0** | 1.6 ± 2.2 |
+
+A rule beats a menu on consistency. Brutalism does what it says. Across 30 runs total, superpowers won correctness once, by one test, in one experiment. Reproduction and full writeups: [`experiments/`](experiments/).
 
 ## Install
 
