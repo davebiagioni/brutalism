@@ -22,12 +22,11 @@ Four files in one workdir (`task.md`):
 
 ## What we're watching
 
-The headline question: **do either of these plugins actually dispatch
-subagents when handed a literally embarrassingly-parallel task?**
-
-`Task` / `Agent` tool-call counts and sidechain entry counts in the
-analyzer table will answer it directly. Everything else is the standard
-cost / correctness panel from the previous experiments.
+`Task` / `Agent` tool-call counts and sidechain entry counts. The original
+question was whether either plugin dispatches subagents on a literally
+embarrassingly-parallel task. The finding turned out to be sharper than
+that: brutalism (with rule 15) does so deterministically; superpowers,
+with the same capability available, does not.
 
 ## Run
 
@@ -36,3 +35,9 @@ cd experiments/parallelism-comparison
 uv run python run.py --reps 5
 uv run python analyze.py
 ```
+
+## Result
+
+See [`RESULTS.md`](RESULTS.md). Short version: brutalism dispatched 4.0 ± 0
+comrades per rep across N=5; superpowers dispatched 1.6 ± 2.2. Both arms
+got 26/26 held-out correctness.

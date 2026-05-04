@@ -68,3 +68,9 @@ working tree under `results/<arm>-NN/` so you can inspect the generated code.
   only deliberate difference is the closing line of the prompt.
 - **Per-tool-call billing**: token counts include cache reads at full input
   rate; consult Anthropic pricing if converting to dollars.
+
+## Result
+
+See [`RESULTS.md`](RESULTS.md). Short version: both arms produced the same
+20-line implementation; superpowers used 2.4× wall time and 4.4× output
+tokens for no measurable correctness gain on this fixed test suite.
