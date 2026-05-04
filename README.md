@@ -10,6 +10,19 @@ You asked for a function. You got a sprint plan, a five-agent code review, a doc
 
 Brutalism gives you the function.
 
+## Numbers
+
+Same LRU cache, fixed test suite, 5 reps each. Both plugins produced the same 20-line implementation. Superpowers used **2.4× the wall time, 4.4× the output tokens, and 1.7× the tool calls**. Zero subagents either way.
+
+| metric         | brutalism | superpowers |
+|----------------|----------:|------------:|
+| wall time      |       14s |         35s |
+| output tokens  |      1.3k |        5.7k |
+| tool calls     |         5 |           9 |
+| impl lines     |        20 |          20 |
+
+Reproduction and full table: [`experiments/tdd-comparison/`](experiments/tdd-comparison/).
+
 ## Install
 
     /plugin marketplace add davebiagioni/brutalism
