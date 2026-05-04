@@ -33,26 +33,37 @@ count above 8.
 
 ## Read
 
-1. **Rule 15 fires reliably.** Brutalism dispatched exactly 4 comrades on
-   every single rep (stdev 0) — one per module. The new rule is more
-   deterministic than superpowers' dispatch behavior.
-2. **Brutalism now dispatches more than superpowers does.** Superpowers'
-   `Agent` calls came in at 1.6 ± 2.2 — some reps dispatched once, others
-   zero times, despite the prompt explicitly mentioning
-   `dispatching-parallel-agents`. The "options on a shelf" approach is
-   noisier than a single rule.
+1. **Brutalism kept its promise every single time. Superpowers did not.**
+   Rule 15 says: dispatch N comrades for N independent units. Brutalism
+   dispatched exactly 4, in every rep, stdev zero. Superpowers' kit
+   *includes* `dispatching-parallel-agents` and the prompt explicitly
+   permitted it — yet it dispatched 1.6 ± 2.2 times across reps (some 0,
+   some more). A rule beats a menu on consistency.
+2. **The headline is predictability, not parallelism.** Whether dispatch
+   actually wins on wall time depends on subtask size; this experiment's
+   subtasks are too small for parallelism to pay off (~24s sequential →
+   ~49s with comrades). That's the cost of doing what you said you'd do.
+   Adjust the rule's threshold if that trade isn't worth it for your work,
+   but the *behavior is legible* either way.
 3. **No correctness signal on this task.** Both arms got perfect held-out
    pass rates in every rep. The four micro-utilities are well-known; the
    model's priors handle them cleanly without process discipline.
-4. **Comradeship has a cost.** Brutalism's wall time roughly doubled (~24s
-   sequential → ~49s with comrades) on this task. Dispatch overhead exceeds
-   the parallel gain when each subtask is ~5 lines. Rule 15's wording
-   ("**N truly independent** units") is correctly conditional; the agent
-   judged 4 micro-modules as qualifying. For genuinely heftier independent
-   subunits, the trade flips.
-5. **Code volume narrowed.** Superpowers' lead on impl lines dropped from
+4. **Code volume narrowed.** Superpowers' lead on impl lines dropped from
    5.3× (exp 2) to 1.9× here. With independent units and parallelism, the
    "verbalize a plan" overhead has fewer places to land.
+
+## Why "rule beats menu" matters
+
+A skill that lists capabilities (\"you may use X if appropriate\") asks the
+model to make a judgment call every time. Judgment calls are noisy. A skill
+that asserts a rule (\"for N independent units, dispatch N comrades\")
+removes the judgment from the loop. The behavior becomes deterministic; the
+operator knows what they bought. If the rule fires inappropriately for a
+specific task, the operator can override in the prompt — but they only
+have to override the cases they want to change, instead of *hoping* the
+right behavior emerges.
+
+This is a meta-finding worth more attention than the wall-time number.
 
 ## Cost vs. quality (across all three experiments)
 
