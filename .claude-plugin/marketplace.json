@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "brutalism",
-      "source": "."
+      "source": "./plugins/brutalism"
     }
   ]
 }
