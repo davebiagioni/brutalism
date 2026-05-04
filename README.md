@@ -12,16 +12,27 @@ Brutalism gives you the function.
 
 ## Numbers
 
-Same LRU cache, fixed test suite, 5 reps each. Both plugins produced the same 20-line implementation. Superpowers used **2.4× the wall time, 4.4× the output tokens, and 1.7× the tool calls**. Zero subagents either way.
+Two experiments. Same model, fresh sessions per run, N=5 each.
+
+**LRU cache, fixed test suite.** Both produced the same 20-line implementation.
 
 | metric         | brutalism | superpowers |
 |----------------|----------:|------------:|
 | wall time      |       14s |         35s |
 | output tokens  |      1.3k |        5.7k |
-| tool calls     |         5 |           9 |
 | impl lines     |        20 |          20 |
+| tests passed   |       6/6 |         6/6 |
 
-Reproduction and full table: [`experiments/tdd-comparison/`](experiments/tdd-comparison/).
+**Expression evaluator, held-out edge tests.** Superpowers got one extra edge case at 5× the code.
+
+| metric              | brutalism | superpowers |
+|---------------------|----------:|------------:|
+| wall time           |       35s |        123s |
+| output tokens       |      4.7k |         30k |
+| impl lines          |        25 |         134 |
+| held-out correctness| 20.4/22   | 21.0/22     |
+
+Zero subagent invocations from either plugin in either experiment. Reproduction and full writeups: [`experiments/`](experiments/).
 
 ## Install
 
