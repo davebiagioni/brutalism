@@ -10,11 +10,9 @@ Writes code with minimal aesthetics and minimal extensibility. Gets it done in a
 
 ## Why
 
-Superpowers and its cousins dispatch multi-agent reviewers to review the multi-agent generators that produced what one terse function would have done. They take twenty minutes and burn a dollar to write five lines of code you could have read in fifteen seconds. Every operation arrives with a manifesto. Every commit comes with a ceremony. Token counts climb. Wall-clock minutes pass. The bill arrives.
+You asked for a function. You got a sprint plan, a five-agent code review, a docstring with three examples, and a $1.20 bill. Capitalism writ in tool calls.
 
-This is capitalism writ in tool calls — complexity sold as care, ceremony sold as quality, latency sold as deliberation. More agents, more context, more confidence-scored sub-reviews, more line items.
-
-Brutalism is the other thing. Béton brut, exposed structure, no decoration. One skill. Two commands. Tests required. The supreme leader demands results.
+Brutalism gives you the function.
 
 ## Install
 
