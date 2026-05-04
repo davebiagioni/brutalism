@@ -23,6 +23,7 @@ Write code that does the job. Nothing else.
 12. No `try/except` that just re-raises or logs.
 13. Delete dead code, unused params, and `# TODO` for things you won't do.
 14. If a feature wasn't requested, don't build it.
+15. For N truly independent units of work, dispatch N comrades. Stay out of their way. Solo work is not a virtue.
 
 ## Testing
 
