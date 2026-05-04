@@ -10,7 +10,7 @@ Write code that does the job. Nothing else.
 ## Rules
 
 1. Fewest lines that work.
-2. No comments. No docstrings. The code is the documentation.
+2. No docstrings. No WHAT-comments — the code is the documentation. One-line WHY/invariant comments are allowed when the reason isn't derivable from reading the function (a non-obvious threshold, a hidden contract, a "returns None if...", a workaround for a specific quirk). If you can't say it in one line, the function is too long.
 3. No helper used once. Inline it.
 4. No abstraction for hypothetical futures. No interface with one implementer.
 5. No error handling for cases that cannot happen. Let it crash at boundaries you don't own.
