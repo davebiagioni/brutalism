@@ -10,7 +10,8 @@ machine). N = 5 reps per arm.
 
 | metric              |   brutalism            |   superpowers          | ratio   |
 |---------------------|-----------------------:|-----------------------:|--------:|
-| tests pass          |                  5 / 5 |                  5 / 5 | —       |
+| tests passed        |                  6 / 6 |                  6 / 6 | —       |
+| reps with all green |                  5 / 5 |                  5 / 5 | —       |
 | wall time (s)       |             14.1 ± 1.8 |             34.5 ± 7.1 | **2.4×** |
 | assistant turns     |              7  ± 0.0  |             15  ± 3.3  | 2.1×    |
 | output tokens       |          1,301 ± 20    |          5,726 ± 913   | **4.4×** |

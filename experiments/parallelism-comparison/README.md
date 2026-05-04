@@ -15,8 +15,8 @@ Four files in one workdir (`task.md`):
 
 ## Test split
 
-- **Visible** (`tests/visible/`, 9 tests across 4 files): basic happy paths.
-- **Held-out** (`tests/holdout/`, 25 tests): edge cases, error paths, and
+- **Visible** (`tests/visible/`, 8 tests across 4 files): basic happy paths.
+- **Held-out** (`tests/holdout/`, 26 tests): edge cases, error paths, and
   performance/efficiency probes (e.g. `fib(100)` will time out under naive
   recursion). Copied into the workdir only after the agent finishes.
 
