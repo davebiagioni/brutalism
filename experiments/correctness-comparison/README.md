@@ -47,3 +47,9 @@ which edges each arm tends to drop.
   guarantees but the visible tests don't probe. An arm that reads the spec
   carefully should generalize; one that just makes the visible tests green
   will leak failures.
+
+## Result
+
+See [`RESULTS.md`](RESULTS.md). Short version: brutalism 20.4/22, superpowers
+21.0/22 across N=5 — superpowers' lead is consistent (stdev 0) but small,
+at 5.3× the impl lines and 6.4× the output tokens.

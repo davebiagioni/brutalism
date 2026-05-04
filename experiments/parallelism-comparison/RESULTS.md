@@ -54,9 +54,9 @@ count above 8.
 
 ## Why "rule beats menu" matters
 
-A skill that lists capabilities (\"you may use X if appropriate\") asks the
+A skill that lists capabilities ("you may use X if appropriate") asks the
 model to make a judgment call every time. Judgment calls are noisy. A skill
-that asserts a rule (\"for N independent units, dispatch N comrades\")
+that asserts a rule ("for N independent units, dispatch N comrades")
 removes the judgment from the loop. The behavior becomes deterministic; the
 operator knows what they bought. If the rule fires inappropriately for a
 specific task, the operator can override in the prompt — but they only
